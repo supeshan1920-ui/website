@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ffe2392291.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">über mich</a></li>
+                <li><a href="#projekte">Projekte</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-text">
+            <p>Informatiker EFZ</p>
+            <h1>Hi, Ich bin <span>Supeshan Andruhilmin</span><br>Ich komme aus Sri Lanka</h1>
+        </div>
+      </div>
+    </div>
+
+    <!--------------about-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.jpeg" alt="Mein Bild">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">über mich</h1>
+                    <p> Ich bin Supeshan Andruhilmin. Ich bin 17 Jahre alt. Ich interessiere mich für den Lehrberuf Informatiker EFZ.
+                        Ich habe diese Website entwickelt, um eine Lehrstelle zu finden. Im Juni 2023 bin ich in die 
+                        Schweiz gekommen. Um mich auf meine zukünftige Lehrstelle vorzubereiten, besuche ich zurzeit die Klasse 
+                        Sprache und Kultur an der Berufswahlschule Limmattal in Dietikon. Hier kann ich meine Deutschkenntnisse 
+                        vertiefen und mich auf die Lehre vorbereiten. Deutsch ist neben Mathematik und ICT mein Lieblingsfach 
+                        in der Schule. Englisch ist praktisch meine zweite Muttersprache, da ich den grössten Teil
+                        meiner Schulzeit an der englischen Schule in Sri Lanka verbracht habe.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Fähigkeiten')">Fähigkeiten</p>
+                        <p class="tab-links" onclick="opentab('Erfahrungen')">Erfahrungen</p>
+                        <p class="tab-links" onclick="opentab('Ausbildung')">Ausbildung</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Fähigkeiten">
+                        <ul>
+                            <li><span>Selbstständige Initiative</span><br>Ich handle eigenständig und lerne aktiv Neues.</li>
+                            <li><span>Kommunikationsfähigkeit</span><br>Ich kann klar kommunizieren und gehe gut mit Feedback um.</li>
+                            <li><span>Technisches Interesse und Lernbereitschaft</span><br>Ich interessiere mich für Technik und lerne gerne dazu.</li>
+                            <li><span>Reflektiertes Denken und Belastbarkeit</span><br>Ich bleibe ruhig und lösungsorientiert, auch in stressigen Situationen.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Erfahrungen">
+                        <ul>
+                            <li><span>Powercoders Webentwicklungskurs</span><br>Ich habe einen intensiven Kurs bei Powercoders absolviert, in dem ich HTML 
+                                      und CSS gelernt habe.</li>
+                            <li><span>Portfolio-Website in Entwicklung</span><br>Ich entwickle aktuell meine eigene Portfolio-Website, 
+                                      um meine Projekte, Fähigkeiten und Lernfortschritte zu präsentieren.</li>
+                            <li><span>ETH Zürich Besuch – Informatiker EFZ Einblick</span><br>Ich habe einen Einblick in den Beruf Informatiker EFZ 
+                                      und erste Erfahrungen mit dem Raspberry Pi gesammelt.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Ausbildung">
+                        <ul>
+                            <li><span>2025–Zurzeit</span><br>Elektrotechnik 2, BWS Limmattal, Dietikon</li>
+                            <li><span>2024–2025</span><br>Sprache und Kultur 1, BWS Limmattal, Dietikon</li>
+                            <li><span>2023–2024</span><br>Vorkurs, BWS Limmattal, Schlieren</li>
+                            <li><span>2019–2023</span><br>Sekundarschule, Adventist International School, Sri Lanka</li>
+                            <li><span>2014–2018</span><br>Primarschule, Adventist International School, Sri Lanka</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------portfolio------------>
+    <div id="projekte">
+        <div class="container">
+            <h1 class="sub-title">Meine Projekte</h1>
+            <div class="worklist"></div>
+            <p class="coming">Kommt Bald...</p>
+        </div>
+    </div>
+
+    <!-----------contact-------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Kontakt mich</h1>
+                    <p><i class="fa-solid fa-envelope"></i> supeshan.andru@bws-limmattal.ch</p>
+                    <p><i class="fa-solid fa-phone"></i> 076 736 60 97</p>
+                    <div class="social-icons">
+                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my cv.pdf" target="_blank" rel="noopener" class="btn btn2">Download CV</a>
+                </div>
+                
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="E-mail" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made by Supeshan Andruhilmin</p>
+        </div>
+     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for (let tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+</html>
